@@ -5,21 +5,20 @@ int main()
     int n,i;
     scanf("%d",&n);
     int a[50];
-    for(i=1;i<50;i++)
+    for(i=2;i<50;i++)
     {
-       a[i-1]=i*i*i;
-
+       a[i-2]=i*i*i;
     }
-    for(i=0;i<50;i++)
+   for(i=0;i<50;i++)
     {
-        if(a[i]==a[n])
+        if(a[i]==n)
         {
             printf("Not Cube Free");
             break;
         }
         else
         {
-            printf("%d",i);
+            printf("%d",n);
             break;
         }
     }
