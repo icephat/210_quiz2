@@ -15,18 +15,18 @@ int main()
                 a++;
             }
             printf("%d",a);
-
         }
-        int b=a;
         if(n>10&&n<=100)
         {
-            for(k=0;k<n-1;)
+            for(k=11;k<n;)
             {
                 k=k+11;
                 x++;
             }
-            printf("%d",x+b);
+            printf("%d",x+9);
         }
+
+
 
     }
 
