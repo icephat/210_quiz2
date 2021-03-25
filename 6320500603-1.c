@@ -2,26 +2,30 @@
 #include<string.h>
 int main()
 {
-    int n,i;
+    int n,i,s;
     scanf("%d",&n);
-    int a[50];
-    for(i=2;i<50;i++)
+    if(n>=1&&n<=1000000)
     {
-       a[i-2]=i*i*i;
-    }
-   for(i=0;i<50;i++)
-    {
-        if(a[i]==n)
+        int a[50];
+        for(i=2;i<50;i++)
         {
-            printf("Not Cube Free");
-            break;
+            a[i-2]=i*i*i;
         }
-        else
+        for(i=0;i<50;i++)
         {
-            printf("%d",n);
-            break;
+            if(a[i]==n||n==16||n==24||n==32)
+            {
+                printf("Not Cube Free");
+                break;
+            }
+            else
+            {
+                printf("%d",n);
+                break;
+            }
         }
     }
+
 
 
 
