@@ -17,15 +17,15 @@ int main()
             printf("%d",a);
 
         }
+        int b=a;
         if(n>10&&n<=100)
         {
             for(k=0;k<n-1;)
             {
                 k=k+11;
                 x++;
-                a++;
             }
-            printf("%d",x+a);
+            printf("%d",x+b);
         }
 
     }
