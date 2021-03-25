@@ -10,19 +10,19 @@ int main()
         for(i=2;i<50;i++)
         {
             a[i-2]=i*i*i;
+           // printf("%d ",a[i-2]);
         }
         for(i=0;i<50;i++)
         {
-            if(a[i]==n||n==16||n==24||n==32)
+            if(a[i]!=n*n*n)
             {
-                printf("Not Cube Free");
-                break;
+                printf("%d",n);
             }
             else
             {
-                printf("%d",n);
-                break;
+                printf("Not Cube Free");
             }
+            break;
         }
     }
 
